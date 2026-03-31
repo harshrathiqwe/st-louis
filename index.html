@@ -3,215 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grow10x | Data Analytics & AI Career Program</title>
-
+    <title>St. Louis | The Elite Data Science Fellowship</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <style>
-        :root {
-            --primary: #3b82f6;
-            --bg-dark: #050505;
-            --card-bg: rgba(255, 255, 255, 0.03);
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-dark);
-            color: #e5e7eb;
-        }
-        h1, h2, h3, .brand {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        .glass {
-            background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .hero-glow {
-            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
-        }
-        .btn-glow:hover {
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
-            transform: translateY(-2px);
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #020203; color: #fff; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .bento-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: default; }
+        .bento-card:hover { background: rgba(255, 255, 255, 0.05); border-color: #3b82f6; transform: translateY(-4px); }
+        .text-gradient { background: linear-gradient(to right, #60a5fa, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glow-blue { box-shadow: 0 0 40px rgba(59, 130, 246, 0.15); }
     </style>
 </head>
-
 <body class="antialiased">
 
-<!-- NAV -->
-<nav class="fixed w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
-    <div class="brand text-2xl font-bold tracking-tighter flex items-center gap-2">
-        <span class="bg-blue-600 text-white px-2 py-0.5 rounded">G10X</span>
-        <span>Grow10x</span>
-    </div>
-
-    <div class="hidden md:flex space-x-10 text-sm font-medium tracking-wide">
-        <a href="#curriculum" class="hover:text-blue-400 transition">Curriculum</a>
-        <a href="#outcomes" class="hover:text-blue-400 transition">Outcomes</a>
-        <a href="#guarantee" class="hover:text-blue-400 transition">Guarantee</a>
-    </div>
-
-    <button class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-widest transition btn-glow">
-        APPLY NOW
-    </button>
-</nav>
-
-<!-- HERO -->
-<section class="relative min-h-screen flex items-center justify-center pt-20 px-6 hero-glow">
-    <div class="max-w-5xl text-center">
-        <div class="inline-block px-4 py-1.5 mb-6 border border-blue-500/30 rounded-full bg-blue-500/10 text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em]">
-            Last Job Guarantee Cohort – 2026
-        </div>
-
-        <h1 class="text-6xl md:text-8xl font-bold mb-8 tracking-tighter leading-[0.9]">
-            From Beginner to <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400">Income-Ready Data Analyst</span>
-        </h1>
-
-        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Learn Data Analytics, Business Analysis & AI with real projects, freelancing income streams, and guaranteed career outcomes — in 6 months.
-        </p>
-
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button class="bg-white text-black px-8 py-4 rounded-xl font-bold text-lg btn-glow">View Curriculum</button>
-            <button class="glass px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10">Book 1:1 Call</button>
-        </div>
-    </div>
-</section>
-
-<!-- STATS -->
-<section class="py-16 border-y border-white/10 bg-white/[0.01]">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-            <h3 class="text-3xl font-bold text-white">6 Months</h3>
-            <p class="text-gray-500 text-xs mt-2">Career Transition Timeline</p>
-        </div>
-        <div>
-            <h3 class="text-3xl font-bold text-white">45 Days</h3>
-            <p class="text-gray-500 text-xs mt-2">Freelance Start</p>
-        </div>
-        <div>
-            <h3 class="text-3xl font-bold text-white">10+</h3>
-            <p class="text-gray-500 text-xs mt-2">Mentor Experience (Years)</p>
-        </div>
-        <div>
-            <h3 class="text-3xl font-bold text-white">100%</h3>
-            <p class="text-gray-500 text-xs mt-2">Money Back Guarantee</p>
-        </div>
-    </div>
-</section>
-
-<!-- DIFFERENTIATOR -->
-<section class="py-24 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">
-            Not Another Course. <span class="text-blue-500">A Career System.</span>
-        </h2>
-
-        <div class="grid md:grid-cols-3 gap-8 mt-16">
-            <div class="glass p-8 rounded-3xl">
-                <h3 class="text-xl font-bold mb-4">Earn While Learning</h3>
-                <p class="text-gray-400 text-sm">Start freelancing within 45 days with real client work.</p>
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto glass rounded-2xl px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-sm">STL</div>
+                <span class="text-xl font-extrabold tracking-tighter uppercase">St. Louis</span>
             </div>
-
-            <div class="glass p-8 rounded-3xl">
-                <h3 class="text-xl font-bold mb-4">Dual Career Path</h3>
-                <p class="text-gray-400 text-sm">Jobs + freelance income streams together.</p>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-400">
+                <a href="#curriculum" class="hover:text-white transition">Methodology</a>
+                <a href="#outcomes" class="hover:text-white transition">Outcomes</a>
+                <a href="#mentors" class="hover:text-white transition">Mentors</a>
             </div>
+            <button class="bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-xl text-sm font-bold transition-all hover:scale-105 active:scale-95">Apply Now</button>
+        </div>
+    </nav>
 
-            <div class="glass p-8 rounded-3xl">
-                <h3 class="text-xl font-bold mb-4">Accountability</h3>
-                <p class="text-gray-400 text-sm">Weekly tracking + 1:1 mentorship.</p>
+    <section class="pt-40 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-blue-600/10 blur-[120px] -z-10"></div>
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-8">
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                VOTED #1 DATA CAREER ACCELERATOR 2026
+            </div>
+            <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-8">
+                Data Science. <br> <span class="text-gradient">Engineered for Elite.</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">
+                Join the St. Louis Fellowship. Master advanced analytics, AI deployment, and executive storytelling in a 16-week immersive experience.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-white text-black px-8 py-4 rounded-2xl font-bold text-lg hover:bg-blue-50 transition-all w-full sm:w-auto shadow-xl shadow-blue-500/10">Reserve My Seat</button>
+                <div class="flex -space-x-3">
+                    <img src="https://i.pravatar.cc/100?u=a" class="w-12 h-12 rounded-full border-2 border-black">
+                    <img src="https://i.pravatar.cc/100?u=b" class="w-12 h-12 rounded-full border-2 border-black">
+                    <img src="https://i.pravatar.cc/100?u=c" class="w-12 h-12 rounded-full border-2 border-black">
+                    <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-black flex items-center justify-center text-[10px] font-bold">+500</div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CURRICULUM -->
-<section id="curriculum" class="py-24 px-6">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold mb-16 text-center">Curriculum</h2>
-
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="glass p-8 rounded-3xl">
-                <h4 class="text-xl font-bold mb-4">AI Foundations</h4>
-                <p class="text-gray-400 text-sm">Prompt Engineering + AI workflows</p>
+    <section class="py-20 px-6 max-w-7xl mx-auto" id="curriculum">
+        <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
+            
+            <div class="md:col-span-2 md:row-span-2 glass bento-card rounded-[2.5rem] p-10 flex flex-col justify-end relative overflow-hidden">
+                <div class="absolute top-10 right-10 opacity-20"><i data-lucide="database" size="120"></i></div>
+                <h3 class="text-3xl font-bold mb-4">The St. Louis Method</h3>
+                <p class="text-gray-400">Unlike bootcamps, we focus on 'Decision Intelligence'. You will learn to architect data pipelines that solve 8-figure business problems.</p>
+                <div class="mt-8 flex gap-2">
+                    <span class="px-3 py-1 bg-white/5 rounded-lg text-xs">SQL Expert</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-lg text-xs">Python Pro</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-lg text-xs">MLOps</span>
+                </div>
             </div>
 
-            <div class="glass p-8 rounded-3xl">
-                <h4 class="text-xl font-bold mb-4">Data Analytics</h4>
-                <p class="text-gray-400 text-sm">SQL, Excel, Power BI, Python</p>
+            <div class="glass bento-card rounded-[2.5rem] p-8 text-center flex flex-col items-center justify-center">
+                <div class="text-5xl font-black text-blue-500 mb-2">94%</div>
+                <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">Hiring Rate</p>
             </div>
 
-            <div class="glass p-8 rounded-3xl">
-                <h4 class="text-xl font-bold mb-4">Business + Automation</h4>
-                <p class="text-gray-400 text-sm">KPIs, dashboards, AI automation</p>
+            <div class="glass bento-card rounded-[2.5rem] p-8 text-center flex flex-col items-center justify-center">
+                <div class="text-5xl font-black text-teal-400 mb-2">$145k</div>
+                <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">Avg Salary</p>
+            </div>
+
+            <div class="md:col-span-2 glass bento-card rounded-[2.5rem] p-8 flex items-center gap-6">
+                <div class="w-16 h-16 bg-blue-600/20 rounded-2xl flex items-center justify-center text-blue-500">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xl">Guaranteed Mentorship</h4>
+                    <p class="text-gray-500 text-sm">1:1 access to Senior Data Scientists at FAANG.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-10 border-y border-white/5 overflow-hidden whitespace-nowrap">
+        <div class="flex gap-20 animate-scroll opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+            <span class="text-2xl font-bold tracking-widest">GOOGLE</span>
+            <span class="text-2xl font-bold tracking-widest">AMAZON</span>
+            <span class="text-2xl font-bold tracking-widest">META</span>
+            <span class="text-2xl font-bold tracking-widest">STRIPE</span>
+            <span class="text-2xl font-bold tracking-widest">TESLA</span>
+            <span class="text-2xl font-bold tracking-widest">OPENAI</span>
+            <span class="text-2xl font-bold tracking-widest">GOOGLE</span>
+            <span class="text-2xl font-bold tracking-widest">AMAZON</span>
+            <span class="text-2xl font-bold tracking-widest">META</span>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-16 text-center italic tracking-tight">The Curriculum Breakdown</h2>
+        <div class="space-y-4">
+            <div class="glass p-6 rounded-3xl flex justify-between items-center group cursor-pointer hover:bg-white/5 transition">
+                <div class="flex gap-6 items-center">
+                    <span class="text-gray-600 font-bold">01</span>
+                    <h3 class="text-xl font-bold">Data Architecture & Advanced SQL</h3>
+                </div>
+                <i data-lucide="chevron-right" class="text-gray-600 group-hover:text-blue-500 transition"></i>
+            </div>
+            <div class="glass p-6 rounded-3xl flex justify-between items-center group cursor-pointer hover:bg-white/5 transition">
+                <div class="flex gap-6 items-center">
+                    <span class="text-gray-600 font-bold">02</span>
+                    <h3 class="text-xl font-bold">Statistical Machine Learning in Python</h3>
+                </div>
+                <i data-lucide="chevron-right" class="text-gray-600 group-hover:text-blue-500 transition"></i>
+            </div>
+            <div class="glass p-6 rounded-3xl flex justify-between items-center group cursor-pointer hover:bg-white/5 transition">
+                <div class="flex gap-6 items-center">
+                    <span class="text-gray-600 font-bold">03</span>
+                    <h3 class="text-xl font-bold">Data Storytelling for the C-Suite</h3>
+                </div>
+                <i data-lucide="chevron-right" class="text-gray-600 group-hover:text-blue-500 transition"></i>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- FREELANCING -->
-<section class="py-24 px-6 bg-white/[0.02] border-y border-white/10">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
-            <h2 class="text-4xl font-bold mb-6">
-                Start Earning in <span class="text-blue-500">45 Days</span>
-            </h2>
-            <p class="text-gray-400">We help you land paid freelance projects while learning.</p>
-        </div>
-
-        <div class="glass p-10 rounded-3xl">
-            <div class="grid grid-cols-2 gap-4 text-gray-400 text-sm">
-                <div>Upwork</div>
-                <div>Fiverr</div>
-                <div>Freelancer</div>
-                <div>Turing</div>
-                <div>Toptal</div>
-                <div>EU/UK Clients</div>
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto bg-blue-600 rounded-[3rem] p-12 md:p-20 text-center glow-blue">
+            <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight">READY TO TURN <br>DATA INTO POWER?</h2>
+            <p class="text-blue-100 mb-10 text-lg">Applications for the Summer Cohort close in 4 days. Only 50 spots available.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <input type="email" placeholder="Enter your email" class="bg-blue-700/50 border border-blue-400/30 px-6 py-4 rounded-2xl outline-none placeholder:text-blue-300 w-full md:w-80">
+                <button class="bg-white text-blue-600 px-10 py-4 rounded-2xl font-bold hover:scale-105 transition-transform uppercase tracking-widest text-sm">Join Waitlist</button>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- TIMELINE -->
-<section class="py-24 px-6">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold mb-16 text-center">Your 6-Month Journey</h2>
+    <footer class="py-12 text-center text-gray-600 text-xs font-bold uppercase tracking-widest border-t border-white/5">
+        &copy; 2026 St. Louis Academy. All Rights Reserved. Designed for the Future.
+    </footer>
 
-        <div class="grid md:grid-cols-4 gap-6 text-sm text-gray-400">
-            <div class="glass p-6 rounded-2xl">Month 1–2: AI Foundations</div>
-            <div class="glass p-6 rounded-2xl">Month 2–4: Analytics Skills</div>
-            <div class="glass p-6 rounded-2xl">Month 2+: Freelancing</div>
-            <div class="glass p-6 rounded-2xl">Month 5–6: Placement</div>
-        </div>
-    </div>
-</section>
-
-<!-- GUARANTEE -->
-<section id="guarantee" class="py-24 px-6">
-    <div class="max-w-4xl mx-auto text-center glass p-16 rounded-[3rem] border border-blue-500/20">
-        <h2 class="text-4xl font-bold mb-6">100% Money-Back Guarantee</h2>
-        <p class="text-gray-400">Complete the program and don’t get placed? Full refund.</p>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="py-24 px-6 text-center">
-    <h2 class="text-5xl font-bold mb-6">Ready to Transform Your Career?</h2>
-    <p class="text-gray-400 mb-10">Limited seats. High accountability.</p>
-    <button class="bg-blue-600 px-10 py-4 rounded-2xl font-bold btn-glow">Apply Now</button>
-</section>
-
-<!-- FOOTER -->
-<footer class="py-12 border-t border-white/5 px-6 text-center text-gray-500 text-sm">
-    © 2026 Grow10x • Built for Career Outcomes
-</footer>
-
-<script>
-    lucide.createIcons();
-</script>
-
+    <script>
+        lucide.createIcons();
+        // Simple animation for the scroll bar
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes scroll {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            .animate-scroll {
+                display: flex;
+                width: 200%;
+                animation: scroll 20s linear infinite;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>
