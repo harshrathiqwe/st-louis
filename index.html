@@ -1,98 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Academic Excellence Portal | University official</title>
-    <style>
-        :root { --cobalt: #002855; --heritage-gold: #997F3D; --snow: #F8F9FA; --graphite: #333; }
-        body { font-family: 'Garamond', serif; background: var(--snow); margin: 0; color: var(--graphite); line-height: 1.6; }
-        header { background: var(--cobalt); color: white; padding: 40px; text-align: center; border-bottom: 6px solid var(--heritage-gold); }
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .tab-system { display: flex; gap: 10px; margin-bottom: 30px; border-bottom: 2px solid #ddd; }
-        .tab { padding: 15px 25px; cursor: pointer; background: #eee; border-radius: 8px 8px 0 0; font-weight: bold; }
-        .tab.active { background: var(--cobalt); color: white; }
-        .content-panel { background: white; padding: 40px; border-radius: 0 0 12px 12px; shadow: 0 10px 30px rgba(0,0,0,0.1); display: none; }
-        .content-panel.active { display: block; animation: fadeIn 0.5s; }
-        .testimony-box { background: #f0f4f8; border-left: 5px solid var(--heritage-gold); padding: 20px; margin: 20px 0; font-style: italic; }
-        .curriculum-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .stat-card { text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
-        .stat-num { font-size: 2.5rem; color: var(--cobalt); font-weight: 800; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        #live-console { background: #1a1a1a; color: #00ff41; padding: 15px; font-family: monospace; height: 100px; overflow-y: scroll; border-radius: 5px; margin-top: 30px; }
-    </style>
-</head>
-<body>
+import React from "react";
 
-<header>
-    <h1>SCHOOL OF ADVANCED TECHNOLOGY & LEADERSHIP</h1>
-    <p>Official Program Dossier & Student Testimony Interface</p>
-</header>
+export default function StPetersLanding() {
+  return (
+    <div className="w-full min-h-screen bg-white text-gray-900 font-sans">
+      {/* HEADER */}
+      <header className="w-full flex justify-between items-center px-10 py-6 shadow-sm bg-white sticky top-0 z-50">
+        <h1 className="text-3xl font-bold">St. Peters Institute</h1>
+        <nav className="flex gap-10 text-lg font-medium">
+          <a href="#programs" className="hover:text-blue-600">Programs</a>
+          <a href="#about" className="hover:text-blue-600">About</a>
+          <a href="#contact" className="hover:text-blue-600">Contact</a>
+        </nav>
+      </header>
 
-<div class="container">
-    <div class="tab-system">
-        <div class="tab active" onclick="openTab(event, 'curriculum')">Academic Curriculum</div>
-        <div class="tab" onclick="openTab(event, 'mentors')">Mentorship & Classes</div>
-        <div class="tab" onclick="openTab(event, 'placement')">Placements & Career</div>
-    </div>
+      {/* HERO SECTION */}
+      <section className="w-full px-10 py-24 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+        <h2 className="text-6xl font-extrabold leading-tight mb-6">
+          Build Your Future in <br /> Data & AI With St. Peters
+        </h2>
+        <p className="text-2xl max-w-2xl opacity-90 mb-10">
+          Industry‑focused programs designed to transform careers using Data Analytics, Agentic AI, Database Administration, and Global Master's Tracks.
+        </p>
+        <button className="bg-white text-blue-700 font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
+          Explore Programs
+        </button>
+      </section>
 
-    <div id="curriculum" class="content-panel active">
-        <h2>Comprehensive 4-Year Roadmap</h2>
-        <div class="testimony-box">
-            "The curriculum isn't just theory; it's a battle-tested blueprint for the future. From Year 1's logic to Year 4's AI ethics, I felt prepared for every industry challenge." 
-            <br><strong>— Marcus Thorne, Lead Dev at Nebula Systems (Class of '24)</strong>
+      {/* PROGRAMS */}
+      <section id="programs" className="px-10 py-20 bg-gray-50">
+        <h3 className="text-4xl font-bold mb-12 text-center">Our Career Programs</h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {/* DA & AI */}
+          <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+            <h4 className="text-2xl font-bold mb-3">Data Analytics & AI Program</h4>
+            <p className="mb-6 text-gray-700">
+              Become job‑ready for Data Analyst, Business Analyst, and AI‑enabled roles with hands‑on tools and real‑world projects.
+            </p>
+            <button className="text-blue-600 font-semibold hover:underline">Learn More →</button>
+          </div>
+
+          {/* AGENTIC AI */}
+          <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+            <h4 className="text-2xl font-bold mb-3">Agentic AI Program</h4>
+            <p className="mb-6 text-gray-700">
+              Master next‑gen automation, workflows, and AI agents to stay ahead in the rapidly evolving AI landscape.
+            </p>
+            <button className="text-blue-600 font-semibold hover:underline">Learn More →</button>
+          </div>
+
+          {/* DBA */}
+          <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+            <h4 className="text-2xl font-bold mb-3">Database Administration (DBA)</h4>
+            <p className="mb-6 text-gray-700">
+              Learn SQL, cloud databases, performance tuning, and database security to prepare for DBA careers.
+            </p>
+            <button className="text-blue-600 font-semibold hover:underline">Learn More →</button>
+          </div>
+
+          {/* Masters Program */}
+          <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition col-span-1 md:col-span-2 lg:col-span-3">
+            <h4 className="text-2xl font-bold mb-3">Global Master's Preparation Program</h4>
+            <p className="mb-6 text-gray-700 max-w-3xl">
+              A structured master's readiness track with mentoring, academic guidance, skill‑building, and capstone projects.
+            </p>
+            <button className="text-blue-600 font-semibold hover:underline">Learn More →</button>
+          </div>
         </div>
-        <div class="curriculum-grid">
-            <div><h3>Year 1: Foundations</h3><ul><li>Advanced Calc & Discrete Math</li><li>Computational Logic</li><li>Structure of Algorithms</li></ul></div>
-            <div><h3>Year 2: Core Engineering</h3><ul><li>Systems Architecture</li><li>Database Internals</li><li>Network Security Protcols</li></ul></div>
-            <div><h3>Year 3: Specialization</h3><ul><li>Neural Network Design</li><li>Cloud Infrastructure</li><li>Applied Cryptography</li></ul></div>
-            <div><h3>Year 4: Final Mastery</h3><ul><li>Industry Capstone Project</li><li>Executive Tech Management</li><li>Global Compliance</li></ul></div>
-        </div>
-    </div>
+      </section>
 
-    <div id="mentors" class="content-panel">
-        <h2>World-Class Mentorship Framework</h2>
-        <p>Every student is paired with a **Corporate Navigator** and an **Academic Advisor** for 1-on-1 growth.</p>
-        <div class="testimony-box">
-            "My mentor didn't just review my code; she reviewed my career goals. Her insights from 15 years at Google were more valuable than any textbook."
-            <br><strong>— Sarah Jenkins, Senior Data Scientist</strong>
-        </div>
-        <ul>
-            <li><strong>Weekly Sync:</strong> 60-minute strategic career mapping.</li>
-            <li><strong>Mock Boardrooms:</strong> Practice presenting technical solutions to C-suite executives.</li>
-            <li><strong>Peer Circles:</strong> Collaborative troubleshooting sessions led by Ph.D. candidates.</li>
+      {/* ABOUT */}
+      <section id="about" className="px-10 py-20">
+        <h3 className="text-4xl font-bold mb-6">Why St. Peters?</h3>
+        <p className="text-xl max-w-4xl text-gray-700 mb-8">
+          St. Peters Institute is committed to delivering world‑class education with industry‑ready curriculum, mentorship, and real problem‑solving training. Our programs focus on career outcomes, practical tools, and AI‑driven transformation.
+        </p>
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg text-gray-800">
+          <li>✔ Live Weekend Classes</li>
+          <li>✔ Real‑World Projects</li>
+          <li>✔ Placement Support</li>
+          <li>✔ Industry Mentors</li>
+          <li>✔ 1:1 Career Guidance</li>
+          <li>✔ Practical Tools & Case Studies</li>
         </ul>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="px-10 py-20 bg-gray-100">
+        <h3 className="text-4xl font-bold mb-6">Get in Touch</h3>
+        <p className="text-lg text-gray-700 mb-10">Have questions or want to enroll? Reach out to us.</p>
+        <form className="max-w-xl grid gap-6">
+          <input className="border p-4 rounded-xl" placeholder="Your Name" />
+          <input className="border p-4 rounded-xl" placeholder="Email" />
+          <input className="border p-4 rounded-xl" placeholder="Phone Number" />
+          <textarea className="border p-4 rounded-xl" placeholder="Message" rows="5"></textarea>
+          <button className="bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl hover:scale-105 transition">
+            Submit
+          </button>
+        </form>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="px-10 py-10 bg-gray-900 text-gray-300 text-center">
+        <p>© {new Date().getFullYear()} St. Peters Institute. All Rights Reserved.</p>
+      </footer>
     </div>
-
-    <div id="placement" class="content-panel">
-        <h2>2026 Placement Performance</h2>
-        <div class="curriculum-grid">
-            <div class="stat-card"><div class="stat-num">98%</div><p>Placement Rate</p></div>
-            <div class="stat-card"><div class="stat-num">$142k</div><p>Average Starting Salary</p></div>
-            <div class="stat-card"><div class="stat-num">450+</div><p>Global Partner Firms</p></div>
-        </div>
-        <h3>Top Recruitment Partners</h3>
-        <p>Microsoft, Tesla, Goldman Sachs, OpenAI, SpaceX, and 200+ emerging Unicorns.</p>
-    </div>
-
-    <div id="live-console">> System Ready... Click a tab to load university data packets.</div>
-</div>
-
-<script>
-    function openTab(evt, tabName) {
-        var i, content, tabs;
-        content = document.getElementsByClassName("content-panel");
-        for (i = 0; i < content.length; i++) { content[i].style.display = "none"; content[i].className = content[i].className.replace(" active", ""); }
-        tabs = document.getElementsByClassName("tab");
-        for (i = 0; i < tabs.length; i++) { tabs[i].className = tabs[i].className.replace(" active", ""); }
-        document.getElementById(tabName).style.display = "block";
-        document.getElementById(tabName).className += " active";
-        evt.currentTarget.className += " active";
-        
-        const log = document.getElementById('live-console');
-        log.innerHTML += <br>> Loading ${tabName.toUpperCase()} modules... [SUCCESS];
-        log.scrollTop = log.scrollHeight;
-    }
-</script>
-
-</body>
-</html>
+  );
+}
